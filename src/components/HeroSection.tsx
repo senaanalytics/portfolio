@@ -1,14 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { User } from "lucide-react";
-
 const HeroSection = () => {
-  return (
-    <section className="min-h-screen flex items-center justify-center px-6 py-20 relative overflow-hidden">
+  return <section className="min-h-screen flex items-center justify-center px-6 py-20 relative overflow-hidden">
       {/* Background gradient */}
-      <div 
-        className="absolute inset-0 opacity-60"
-        style={{ background: "var(--gradient-hero)" }}
-      />
+      <div className="absolute inset-0 opacity-60" style={{
+      background: "var(--gradient-hero)"
+    }} />
       
       {/* Decorative elements */}
       <div className="absolute top-20 right-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
@@ -23,9 +20,8 @@ const HeroSection = () => {
               <span className="text-foreground">Sena</span>
             </h1>
             
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              Especialista em Power BI certificado pela Microsoft. Desenvolvo dashboards interativos e automatizados para diferentes áreas de negócio.
-            </p>
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">Estudante de ciência da computação. 
+ Desenvolvo dashboards interativos e automatizados para diferentes áreas de negócio.</p>
             
             <Button variant="hero" asChild>
               <a href="#sobre-mim">Sobre mim</a>
@@ -46,8 +42,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
