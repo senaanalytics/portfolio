@@ -20,7 +20,7 @@ const HeroSection = () => {
               <span className="text-foreground">Sena</span>
             </h1>
             
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">Estudante de ciência da computação. 
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">Estudante de ciência da computação.  
  Desenvolvo dashboards interativos e automatizados para diferentes áreas de negócio.</p>
             
             <Button variant="hero" asChild>
@@ -33,11 +33,7 @@ const HeroSection = () => {
             <div className="relative">
               <div className="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full bg-gradient-to-br from-primary/30 to-accent/20 p-1">
                 <div className="w-full h-full rounded-full bg-card flex items-center justify-center overflow-hidden border-2 border-border">
-                  <img 
-                    src={profilePhoto} 
-                    alt="Isaque Sena - Analista de Dados" 
-                    className="w-full h-full object-cover"
-                  />
+                  <img src={profilePhoto} alt="Isaque Sena - Analista de Dados" className="w-full h-full object-cover" />
                 </div>
               </div>
               {/* Glow effect */}
