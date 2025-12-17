@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { User } from "lucide-react";
+import profilePhoto from "@/assets/profile-photo.jpg";
 const HeroSection = () => {
   return <section className="min-h-screen flex items-center justify-center px-6 py-20 relative overflow-hidden">
       {/* Background gradient */}
@@ -33,7 +33,11 @@ const HeroSection = () => {
             <div className="relative">
               <div className="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full bg-gradient-to-br from-primary/30 to-accent/20 p-1">
                 <div className="w-full h-full rounded-full bg-card flex items-center justify-center overflow-hidden border-2 border-border">
-                  <User className="w-24 h-24 md:w-32 md:h-32 text-muted-foreground" />
+                  <img 
+                    src={profilePhoto} 
+                    alt="Isaque Sena - Analista de Dados" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
               {/* Glow effect */}
